@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Example</title>
+    <style>
+        .image {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전달받은 a 변수 출력 -->
+    <h4>{{ a }}</h4>
+
+
+    <!-- 비디오 출력 -->
+    <video class="video" controls src="{{ url_for('static', filename='videos/rl-video-episode-0.mp4') }}"></video>
+    <video class="video" controls src="{{ url_for('static', filename='videos/rl-video-episode-1.mp4') }}"></video>
+    <video class="video" controls src="{{ url_for('static', filename='videos/Untitled.mov') }}"></video>
+</body>
+</html>

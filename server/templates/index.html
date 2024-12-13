@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Example</title>
+    <style>
+        .image {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전달받은 a 변수 출력 -->
+    <h4>{{ a }}</h4>
+
+    <!-- 이미지 출력 -->
+    <img src="{{ url_for('static', filename='images/img.png') }}" class="image" />
+</body>
+</html>
